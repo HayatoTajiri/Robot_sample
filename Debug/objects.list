@@ -1,0 +1,6 @@
+"BNO055_fusion/BNO055.o"
+"Ballsensor/Ballsensor.o"
+"Linesensor/Linesensor.o"
+"Motor/Motor.o"
+"Ping/Ping.o"
+"main.o"

@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.127106594">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.127106594" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}-debug" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.127106594" name="Debug" parent="fr.ac6.managedbuild.config.gnu.cross.exe.debug" postannouncebuildStep="Generating binary and Printing size information:" postbuildStep="arm-none-eabi-objcopy -O binary &quot;${BuildArtifactFileBaseName}.elf&quot; &quot;${ProjName}.bin&quot; &amp;&amp; arm-none-eabi-size -B &quot;${BuildArtifactFileName}&quot; &amp;&amp; make ldclean" preannouncebuildStep="Creating makefile.defs:" prebuildStep="echo &quot;export PREPROC_CMD = ${openstm32_compiler_path}/${compiler_prefix}cpp -E -P&quot; &gt; ${ProjDirPath}/makefile.defs">
+					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.127106594." name="/" resourcePath="">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug.452859081" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.999537998" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu" value="STM32F446RETx" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.261528755" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board" value="NUCLEO-F446RE" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.141136646" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu" value="fr.ac6.managedbuild.option.gnu.cross.fpu.fpv4-sp-d16" valueType="enumerated"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.328225251" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi" value="fr.ac6.managedbuild.option.gnu.cross.floatabi.softfp" valueType="enumerated"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.227832300" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/Robot_sample}/Debug" id="fr.ac6.managedbuild.builder.gnu.cross.691436200" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.132016534" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+								<option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.777279886" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.more" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.279037707" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.437123720" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;../.&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../BNO055_fusion&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Ballsensor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Linesensor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Motor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Ping&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/TARGET_NUCLEO_F446RE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/drivers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/hal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/platform&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.771758488" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__MBED__=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_I2CSLAVE=1"/>
+									<listOptionValue builtIn="false" value="TARGET_LIKE_MBED"/>
+									<listOptionValue builtIn="false" value="DEVICE_PORTOUT=1"/>
+									<listOptionValue builtIn="false" value="MBED_BUILD_TIMESTAMP=1542112513.75"/>
+									<listOptionValue builtIn="false" value="DEVICE_PORTINOUT=1"/>
+									<listOptionValue builtIn="false" value="TARGET_RTOS_M4_M7"/>
+									<listOptionValue builtIn="false" value="DEVICE_LOWPOWERTIMER=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_RTC=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_SERIAL_ASYNCH=1"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32F4"/>
+									<listOptionValue builtIn="false" value="__CMSIS_RTOS"/>
+									<listOptionValue builtIn="false" value="__FPU_PRESENT=1"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32F446xE"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC"/>
+									<listOptionValue builtIn="false" value="DEVICE_CAN=1"/>
+									<listOptionValue builtIn="false" value="TARGET_CORTEX_M"/>
+									<listOptionValue builtIn="false" value="DEVICE_I2C_ASYNCH=1"/>
+									<listOptionValue builtIn="false" value="TARGET_LIKE_CORTEX_M4"/>
+									<listOptionValue builtIn="false" value="DEVICE_ANALOGOUT=1"/>
+									<listOptionValue builtIn="false" value="TARGET_M4"/>
+									<listOptionValue builtIn="false" value="DEVICE_SPI_ASYNCH=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_PWMOUT=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_INTERRUPTIN=1"/>
+									<listOptionValue builtIn="false" value="TARGET_CORTEX"/>
+									<listOptionValue builtIn="false" value="DEVICE_I2C=1"/>
+									<listOptionValue builtIn="false" value="TRANSACTION_QUEUE_SIZE_SPI=2"/>
+									<listOptionValue builtIn="false" value="__CORTEX_M4"/>
+									<listOptionValue builtIn="false" value="DEVICE_STDIO_MESSAGES=1"/>
+									<listOptionValue builtIn="false" value="TARGET_FF_MORPHO"/>
+									<listOptionValue builtIn="false" value="TARGET_FAMILY_STM32"/>
+									<listOptionValue builtIn="false" value="TARGET_FF_ARDUINO"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32F446RE"/>
+									<listOptionValue builtIn="false" value="TARGET_RELEASE"/>
+									<listOptionValue builtIn="false" value="TARGET_STM"/>
+									<listOptionValue builtIn="false" value="USBHOST_OTHER"/>
+									<listOptionValue builtIn="false" value="__MBED_CMSIS_RTOS_CM"/>
+									<listOptionValue builtIn="false" value="DEVICE_SLEEP=1"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC_ARM"/>
+									<listOptionValue builtIn="false" value="DEVICE_SPI=1"/>
+									<listOptionValue builtIn="false" value="USB_STM_HAL"/>
+									<listOptionValue builtIn="false" value="TARGET_NUCLEO_F446RE"/>
+									<listOptionValue builtIn="false" value="DEVICE_SPISLAVE=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_ANALOGIN=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_SERIAL=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_FLASH=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_PORTIN=1"/>
+									<listOptionValue builtIn="false" value="ARM_MATH_CM4"/>
+									<listOptionValue builtIn="false" value="DEVICE_SERIAL_FC=1"/>
+									<listOptionValue builtIn="false" value="MBED_DEBUG"/>
+									<listOptionValue builtIn="false" value="MBED_TRAP_ERRORS_ENABLED=1"/>
+									<listOptionValue builtIn="false" value="MBED_DEBUG"/>
+									<listOptionValue builtIn="false" value="MBED_TRAP_ERRORS_ENABLED=1"/>
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+								</option>
+								<option id="gnu.c.compiler.option.include.files.931797859" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false" valueType="includeFiles">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/mbed_config.h"/>
+								</option>
+								<option id="gnu.c.compiler.option.dialect.std.681262171" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.gnu99" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.dialect.std.849929458" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.c99" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.warnings.extrawarn.331743784" name="Extra warnings (-Wextra)" superClass="gnu.c.compiler.option.warnings.extrawarn" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata.297094076" name="Place the data in their own section (-fdata-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction.919728154" name="Place the function in their own section (-ffunction-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="gnu.c.compiler.option.optimization.flags.113329525" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags" useByScannerDiscovery="false" value=" -funsigned-char -fno-delete-null-pointer-checks -fomit-frame-pointer -fmessage-length=0 -fno-builtin" valueType="string"/>
+								<option id="fr.ac6.managedbuid.gnu.c.compiler.option.misc.other.822650066" name="Other flags" superClass="fr.ac6.managedbuid.gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="  -Wno-unused-parameter -Wno-missing-field-initializers" valueType="string"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.417720624" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.320376122" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.593371410" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+								<option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.814074789" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.418943652" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.include.paths.347122851" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;../.&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../BNO055_fusion&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Ballsensor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Linesensor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Motor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Ping&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/TARGET_NUCLEO_F446RE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/drivers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/hal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/platform&quot;"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.230052866" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__MBED__=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_I2CSLAVE=1"/>
+									<listOptionValue builtIn="false" value="TARGET_LIKE_MBED"/>
+									<listOptionValue builtIn="false" value="DEVICE_PORTOUT=1"/>
+									<listOptionValue builtIn="false" value="MBED_BUILD_TIMESTAMP=1542112513.75"/>
+									<listOptionValue builtIn="false" value="DEVICE_PORTINOUT=1"/>
+									<listOptionValue builtIn="false" value="TARGET_RTOS_M4_M7"/>
+									<listOptionValue builtIn="false" value="DEVICE_LOWPOWERTIMER=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_RTC=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_SERIAL_ASYNCH=1"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32F4"/>
+									<listOptionValue builtIn="false" value="__CMSIS_RTOS"/>
+									<listOptionValue builtIn="false" value="__FPU_PRESENT=1"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32F446xE"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC"/>
+									<listOptionValue builtIn="false" value="DEVICE_CAN=1"/>
+									<listOptionValue builtIn="false" value="TARGET_CORTEX_M"/>
+									<listOptionValue builtIn="false" value="DEVICE_I2C_ASYNCH=1"/>
+									<listOptionValue builtIn="false" value="TARGET_LIKE_CORTEX_M4"/>
+									<listOptionValue builtIn="false" value="DEVICE_ANALOGOUT=1"/>
+									<listOptionValue builtIn="false" value="TARGET_M4"/>
+									<listOptionValue builtIn="false" value="DEVICE_SPI_ASYNCH=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_PWMOUT=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_INTERRUPTIN=1"/>
+									<listOptionValue builtIn="false" value="TARGET_CORTEX"/>
+									<listOptionValue builtIn="false" value="DEVICE_I2C=1"/>
+									<listOptionValue builtIn="false" value="TRANSACTION_QUEUE_SIZE_SPI=2"/>
+									<listOptionValue builtIn="false" value="__CORTEX_M4"/>
+									<listOptionValue builtIn="false" value="DEVICE_STDIO_MESSAGES=1"/>
+									<listOptionValue builtIn="false" value="TARGET_FF_MORPHO"/>
+									<listOptionValue builtIn="false" value="TARGET_FAMILY_STM32"/>
+									<listOptionValue builtIn="false" value="TARGET_FF_ARDUINO"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32F446RE"/>
+									<listOptionValue builtIn="false" value="TARGET_RELEASE"/>
+									<listOptionValue builtIn="false" value="TARGET_STM"/>
+									<listOptionValue builtIn="false" value="USBHOST_OTHER"/>
+									<listOptionValue builtIn="false" value="__MBED_CMSIS_RTOS_CM"/>
+									<listOptionValue builtIn="false" value="DEVICE_SLEEP=1"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC_ARM"/>
+									<listOptionValue builtIn="false" value="DEVICE_SPI=1"/>
+									<listOptionValue builtIn="false" value="USB_STM_HAL"/>
+									<listOptionValue builtIn="false" value="TARGET_NUCLEO_F446RE"/>
+									<listOptionValue builtIn="false" value="DEVICE_SPISLAVE=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_ANALOGIN=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_SERIAL=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_FLASH=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_PORTIN=1"/>
+									<listOptionValue builtIn="false" value="ARM_MATH_CM4"/>
+									<listOptionValue builtIn="false" value="DEVICE_SERIAL_FC=1"/>
+									<listOptionValue builtIn="false" value="MBED_DEBUG"/>
+									<listOptionValue builtIn="false" value="MBED_TRAP_ERRORS_ENABLED=1"/>
+									<listOptionValue builtIn="false" value="MBED_DEBUG"/>
+									<listOptionValue builtIn="false" value="MBED_TRAP_ERRORS_ENABLED=1"/>
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.include.files.940862533" name="Include files (-include)" superClass="gnu.cpp.compiler.option.include.files" useByScannerDiscovery="false" valueType="includeFiles">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/mbed_config.h"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.dialect.std.584179102" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.gnu99" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.warnings.allwarn.675147574" name="All warnings (-Wall)" superClass="gnu.cpp.compiler.option.warnings.allwarn" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.warnings.extrawarn.712949079" name="Extra warnings (-Wextra)" superClass="gnu.cpp.compiler.option.warnings.extrawarn" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.fdata.460069098" name="Place the data in their own section (-fdata-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.fdata" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction.568338263" name="Place the function in their own section (-ffunction-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.optimization.flags.893802727" name="Other optimization flags" superClass="gnu.cpp.compiler.option.optimization.flags" useByScannerDiscovery="false" value=" -funsigned-char -fno-delete-null-pointer-checks -fomit-frame-pointer -fmessage-length=0 -fno-builtin" valueType="string"/>
+								<option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.misc.other.217083059" name="Other flags" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.misc.other" useByScannerDiscovery="false" value=" -Wvla -Wno-unused-parameter -Wno-missing-field-initializers" valueType="string"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.723800421" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s.289299408" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.004600895" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker">
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.script.408139924" name="Linker Script (-T)" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.script" value="${ProjDirPath}/Debug/linker-script-debug.ld" valueType="string"/>
+								<option id="gnu.cpp.link.option.flags.119447241" name="Linker flags" superClass="gnu.cpp.link.option.flags" useByScannerDiscovery="false" value="-Wl,--wrap=main -Wl,--wrap=_memalign_r -Wl,--wrap=exit -Wl,--wrap=atexit -DMBED_DEBUG -DMBED_TRAP_ERRORS_ENABLED=1 -Wl,-n -Wl,--start-group -lstdc++ -lsupc++ -lm -lc -lgcc -lnosys -Wl,--end-group" valueType="string"/>
+								<option id="gnu.cpp.link.option.userobjs.860478669" name="Other objects" superClass="gnu.cpp.link.option.userobjs" valueType="userObjs">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/PeripheralPins.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/analogin_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/analogout_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/analogout_device.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/can_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/flash_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/gpio_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/gpio_irq_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/gpio_irq_device.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/hal_init_pre.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/hal_tick_16b.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/hal_tick_32b.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/i2c_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/lp_ticker.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/mbed_board.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/mbed_overrides.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/mbed_retarget.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/mbed_sdk_boot.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/pinmap.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/port_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/pwmout_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/pwmout_device.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/rtc_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/serial_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/serial_device.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/sleep.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/spi_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/startup_stm32f446xx.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_can.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cec.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cortex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_crc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dfsdm.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma2d.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dsi.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_eth.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ramfunc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_fmpi2c.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_fmpi2c_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_gpio.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hash.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hash_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hcd.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_irda.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_iwdg.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_lptim.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_ltdc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_ltdc_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_mmc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_msp_template.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_nand.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_nor.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pccard.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_qspi.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rng.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sai.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sai_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sd.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sdram.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_smartcard.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spdifrx.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spi.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sram.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_uart.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_usart.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_wwdg.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_adc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_crc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dac.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dma.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dma2d.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_exti.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fmc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fsmc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_gpio.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_i2c.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_lptim.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_pwr.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rcc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rng.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rtc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_sdmmc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_spi.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_tim.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usart.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usb.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_utils.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm_spi_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/system_clock.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/system_stm32f4xx.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/trng_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/us_ticker_16b.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/us_ticker_32b.o}&quot;"/>
+								</option>
+								<option id="gnu.cpp.link.option.libs.938259130" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="mbed"/>
+								</option>
+								<option id="gnu.cpp.link.option.paths.413408503" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.250040340" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.518829261" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.160758105" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler">
+								<option id="gnu.both.asm.option.include.paths.558282349" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;../.&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../BNO055_fusion&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Ballsensor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Linesensor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Motor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Ping&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/TARGET_NUCLEO_F446RE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/drivers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/hal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/platform&quot;"/>
+								</option>
+								<option id="gnu.both.asm.option.flags.391834106" name="Assembler flags" superClass="gnu.both.asm.option.flags" useByScannerDiscovery="false" value=" --defsym TRANSACTION_QUEUE_SIZE_SPI=2 --defsym __CORTEX_M4=1 --defsym USB_STM_HAL=1 --defsym ARM_MATH_CM4=1 --defsym __FPU_PRESENT=1 --defsym USBHOST_OTHER=1 --defsym __MBED_CMSIS_RTOS_CM=1 --defsym __CMSIS_RTOS=1 --defsym MBED_DEBUG=1 --defsym MBED_TRAP_ERRORS_ENABLED=1 " valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.583677876" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.384494784" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.1332864391" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_L152RE|/filer/web_data/repo_builds/4/318/TARGET_ARCH_GPRS|/filer/web_data/repo_builds/4/318/TARGET_SAMD21J18A|Ping/.meta|/filer/web_data/repo_builds/4/318/TARGET_NRF51_MICROBIT_B|/filer/web_data/repo_builds/4/318/TARGET_KW24D|/filer/web_data/repo_builds/4/318/TARGET_ELMO_F411RE|/filer/web_data/repo_builds/4/318/TARGET_LPC1768|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_L073RZ|/filer/web_data/repo_builds/4/318/TARGET_DISCO_F769NI|/filer/web_data/repo_builds/4/318/TARGET_UBLOX_EVK_NINA_B1|/filer/workspace_data/workspaces/5/54aa59198d6ce932e2ce403b4bd8a6a4/Robot_sample/src/BNO055_fusion/.hg|/filer/web_data/repo_builds/4/318/TARGET_LPC812|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F070RB|/filer/web_data/repo_builds/4/318/TARGET_LPC11U37H_401|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F429ZI|/filer/web_data/repo_builds/4/318/TARGET_KW41Z|/filer/web_data/repo_builds/4/318/TARGET_MTS_MDOT_F405RG|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F302R8|/filer/web_data/repo_builds/4/318/TARGET_DISCO_F429ZI|/filer/web_data/repo_builds/4/318/TARGET_NRF52840_DK|/filer/web_data/repo_builds/4/318/TARGET_K22F|/filer/web_data/repo_builds/4/318/TARGET_DISCO_F334C8|/filer/web_data/repo_builds/4/318/TARGET_DISCO_F413ZH|/filer/web_data/repo_builds/4/318/TARGET_DELTA_DFBM_NQ620|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F072RB|Ballsensor/.meta|/filer/web_data/repo_builds/4/318/TARGET_SEEED_TINY_BLE|/filer/web_data/repo_builds/4/318/TARGET_MOTE_L152RC|Ballsensor/.msub|/filer/web_data/repo_builds/4/318/TARGET_UBLOX_EVA_NINA|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F042K6|/filer/web_data/repo_builds/4/318/TARGET_MAX32630FTHR|/filer/workspace_data/workspaces/5/54aa59198d6ce932e2ce403b4bd8a6a4/Robot_sample/src/Ballsensor/.hg|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F439ZI|/filer/web_data/repo_builds/4/318/TARGET_MAX32625NEXPAQ|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F103RB|/filer/web_data/repo_builds/4/318/TARGET_K82F|/filer/web_data/repo_builds/4/318/TARGET_DISCO_F746NG|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F091RC|/filer/web_data/repo_builds/4/318/TARGET_ARCH_BLE|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F746ZG|/filer/web_data/repo_builds/4/318/TARGET_LPC1347|/filer/web_data/repo_builds/4/318/TARGET_NCS36510|.msub|BNO055_fusion/.meta|/filer/web_data/repo_builds/4/318/TARGET_NRF51_MICROBIT|/filer/web_data/repo_builds/4/318/TARGET_MTM_MTCONNECT04S|/filer/web_data/repo_builds/4/318/TARGET_LPC546XX|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F401RE|/filer/web_data/repo_builds/4/318/TARGET_LPC1114|/filer/web_data/repo_builds/4/318/TARGET_KL46Z|/filer/workspace_data/workspaces/5/54aa59198d6ce932e2ce403b4bd8a6a4/Robot_sample/src/Linesensor/.hg|/filer/web_data/repo_builds/4/318/TARGET_ARM_MPS2_M0P|Linesensor/.meta|/filer/web_data/repo_builds/4/318/TARGET_TY51822R3|/filer/web_data/repo_builds/4/318/TARGET_KL25Z|/filer/web_data/repo_builds/4/318/TARGET_OC_MBUINO|/filer/web_data/repo_builds/4/318/TARGET_VK_RZ_A1H|/filer/web_data/repo_builds/4/318/TARGET_K64F|/filer/web_data/repo_builds/4/318/TARGET_ARCH_MAX|/filer/web_data/repo_builds/4/318/TARGET_LPC11U24|/filer/web_data/repo_builds/4/318/TARGET_RO359B|/filer/web_data/repo_builds/4/318/TARGET_LPC11U35_501|/filer/web_data/repo_builds/4/318/TARGET_EFM32PG_STK3401|/filer/web_data/repo_builds/4/318/TARGET_LPC4337|/filer/web_data/repo_builds/4/318/TARGET_HEXIWEAR|/filer/web_data/repo_builds/4/318/TARGET_DISCO_L072CZ_LRWAN1|/filer/web_data/repo_builds/4/318/TARGET_MAX32625MBED|/filer/workspace_data/workspaces/5/54aa59198d6ce932e2ce403b4bd8a6a4/Robot_sample/src/.hg|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F411RE|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F410RB|/filer/web_data/repo_builds/4/318/TARGET_MTS_MDOT_F411RE|.meta|/filer/web_data/repo_builds/4/318/TARGET_EFM32HG_STK3400|/filer/web_data/repo_builds/4/318/TARGET_TB_SENSE_1|/filer/web_data/repo_builds/4/318/TARGET_KL82Z|/filer/web_data/repo_builds/4/318/TARGET_ARM_CM3DS_MPS2|/filer/web_data/repo_builds/4/318/TARGET_WIZwiki_W7500|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F446RE/TOOLCHAIN_IAR|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_L432KC|/filer/web_data/repo_builds/4/318/TARGET_B96B_F446VE|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F303ZE|/filer/web_data/repo_builds/4/318/TARGET_HRM1017|/filer/web_data/repo_builds/4/318/TARGET_MAX32620HSP|/filer/web_data/repo_builds/4/318/TARGET_EFM32WG_STK3800|/filer/web_data/repo_builds/4/318/TARGET_MTS_DRAGONFLY_F411RE|/filer/web_data/repo_builds/4/318/TARGET_DISCO_L053C8|/filer/web_data/repo_builds/4/318/TARGET_LPC4088|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F030R8|/filer/web_data/repo_builds/4/318/TARGET_VBLUNO51|/filer/web_data/repo_builds/4/318/TARGET_VBLUNO52|/filer/web_data/repo_builds/4/318/TARGET_EFM32LG_STK3600|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F756ZG|/filer/web_data/repo_builds/4/318/TARGET_WALLBOT_BLE|/filer/web_data/repo_builds/4/318/TARGET_NRF51_DK|/filer/web_data/repo_builds/4/318/TARGET_NUMAKER_PFM_M453|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F412ZG|/filer/web_data/repo_builds/4/318/TARGET_ARM_MPS2_M7|/filer/web_data/repo_builds/4/318/TARGET_ARM_MPS2_M4|/filer/web_data/repo_builds/4/318/TARGET_ARM_MPS2_M3|/filer/web_data/repo_builds/4/318/TARGET_ARM_MPS2_M0|/filer/web_data/repo_builds/4/318/TARGET_KL27Z|/filer/web_data/repo_builds/4/318/TARGET_MAXWSNENV|/filer/web_data/repo_builds/4/318/TARGET_MAX32600MBED|/filer/web_data/repo_builds/4/318/TARGET_LPC4088_DM|/filer/web_data/repo_builds/4/318/TARGET_LPC11U35_401|/filer/web_data/repo_builds/4/318/TARGET_RZ_A1H|/filer/web_data/repo_builds/4/318/TARGET_K66F|/filer/web_data/repo_builds/4/318/TARGET_KL43Z|/filer/web_data/repo_builds/4/318/TARGET_ARM_BEETLE_SOC|/filer/web_data/repo_builds/4/318/TARGET_SAMR21G18A|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F446ZE|/filer/web_data/repo_builds/4/318/TARGET_NRF51_DONGLE_LEGACY|/filer/web_data/repo_builds/4/318/TARGET_TEENSY3_1|/filer/web_data/repo_builds/4/318/TARGET_K20D50M|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F207ZG|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F031K6|/filer/web_data/repo_builds/4/318/TARGET_DELTA_DFCM_NNN40|/filer/web_data/repo_builds/4/318/TARGET_WIZWIKI_W7500P|/filer/web_data/repo_builds/4/318/TARGET_ARM_IOTSS_BEID|/filer/web_data/repo_builds/4/318/TARGET_NRF51822|/filer/web_data/repo_builds/4/318/TARGET_LPC824|.hg_archival.txt|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F303K8|/filer/web_data/repo_builds/4/318/TARGET_DISCO_L475VG_IOT01A|/filer/web_data/repo_builds/4/318/TARGET_DISCO_L476VG|/filer/web_data/repo_builds/4/318/TARGET_NRF52_DK|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_L031K6|/filer/web_data/repo_builds/4/318/TARGET_DISCO_F469NI|/filer/web_data/repo_builds/4/318/TARGET_LPC54114|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F334R8|/filer/web_data/repo_builds/4/318/TARGET_SSCI824|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F767ZI|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_L053R8|/filer/web_data/repo_builds/4/318/TARGET_ARCH_PRO|/filer/web_data/repo_builds/4/318/TARGET_SAMD21G18A|/filer/workspace_data/workspaces/5/54aa59198d6ce932e2ce403b4bd8a6a4/Robot_sample/src/Motor/.hg|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F446RE/TOOLCHAIN_ARM_MICRO|/filer/web_data/repo_builds/4/318/TARGET_LPC1549|Motor/.meta|/filer/web_data/repo_builds/4/318/TARGET_RBLAB_NRF51822|/filer/web_data/repo_builds/4/318/TARGET_KL05Z|/filer/web_data/repo_builds/4/318/TARGET_RBLAB_BLENANO|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_L486RG|/filer/workspace_data/workspaces/5/54aa59198d6ce932e2ce403b4bd8a6a4/Robot_sample/src/Ping/.hg|/filer/web_data/repo_builds/4/318/TARGET_EFM32GG_STK3700|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_L476RG|/filer/web_data/repo_builds/4/318/TARGET_WIZWIKI_W7500ECO|/filer/web_data/repo_builds/4/318/TARGET_TB_SENSE_12|/filer/web_data/repo_builds/4/318/TARGET_LPC11U68|/filer/web_data/repo_builds/4/318/TARGET_XADOW_M0|/filer/web_data/repo_builds/4/318/TARGET_UBRIDGE|/filer/web_data/repo_builds/4/318/TARGET_NRF51_DONGLE|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F303RE|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F446RE/TOOLCHAIN_ARM_STD|/filer/web_data/repo_builds/4/318/TARGET_UBLOX_C027|/filer/web_data/repo_builds/4/318/TARGET_USENSE|/filer/web_data/repo_builds/4/318/TARGET_MICRONFCBOARD|/filer/web_data/repo_builds/4/318/TARGET_EFM32ZG_STK3200|/filer/web_data/repo_builds/4/318/TARGET_EFM32PG12_STK3402" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="fr.ac6.managedbuild.config.gnu.cross.exe.release.458118663">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.458118663" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}-release" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.458118663" name="Release" parent="fr.ac6.managedbuild.config.gnu.cross.exe.release" postannouncebuildStep="Generating binary and Printing size information:" postbuildStep="arm-none-eabi-objcopy -O binary &quot;${BuildArtifactFileBaseName}.elf&quot; &quot;${ProjName}.bin&quot; &amp;&amp; arm-none-eabi-size -B &quot;${BuildArtifactFileName}&quot; &amp;&amp; make ldclean" preannouncebuildStep="Creating makefile.defs:" prebuildStep="echo &quot;export PREPROC_CMD = ${openstm32_compiler_path}/${compiler_prefix}cpp -E -P&quot; &gt; ${ProjDirPath}/makefile.defs">
+					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.release.458118663." name="/" resourcePath="">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release.002314540" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.650521751" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu" value="STM32F446RETx" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.540140208" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board" value="NUCLEO-F446RE" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.502327297" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu" value="fr.ac6.managedbuild.option.gnu.cross.fpu.fpv4-sp-d16" valueType="enumerated"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.057176442" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi" value="fr.ac6.managedbuild.option.gnu.cross.floatabi.softfp" valueType="enumerated"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.472418845" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/Robot_sample}/Release" id="fr.ac6.managedbuild.builder.gnu.cross.460853310" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.404671431" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+								<option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.426843393" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.758840953" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.748487643" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;../.&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../BNO055_fusion&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Ballsensor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Linesensor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Motor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Ping&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/TARGET_NUCLEO_F446RE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/drivers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/hal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/platform&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.107019590" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__MBED__=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_I2CSLAVE=1"/>
+									<listOptionValue builtIn="false" value="TARGET_LIKE_MBED"/>
+									<listOptionValue builtIn="false" value="DEVICE_PORTOUT=1"/>
+									<listOptionValue builtIn="false" value="MBED_BUILD_TIMESTAMP=1542112513.75"/>
+									<listOptionValue builtIn="false" value="DEVICE_PORTINOUT=1"/>
+									<listOptionValue builtIn="false" value="TARGET_RTOS_M4_M7"/>
+									<listOptionValue builtIn="false" value="DEVICE_LOWPOWERTIMER=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_RTC=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_SERIAL_ASYNCH=1"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32F4"/>
+									<listOptionValue builtIn="false" value="__CMSIS_RTOS"/>
+									<listOptionValue builtIn="false" value="__FPU_PRESENT=1"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32F446xE"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC"/>
+									<listOptionValue builtIn="false" value="DEVICE_CAN=1"/>
+									<listOptionValue builtIn="false" value="TARGET_CORTEX_M"/>
+									<listOptionValue builtIn="false" value="DEVICE_I2C_ASYNCH=1"/>
+									<listOptionValue builtIn="false" value="TARGET_LIKE_CORTEX_M4"/>
+									<listOptionValue builtIn="false" value="DEVICE_ANALOGOUT=1"/>
+									<listOptionValue builtIn="false" value="TARGET_M4"/>
+									<listOptionValue builtIn="false" value="DEVICE_SPI_ASYNCH=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_PWMOUT=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_INTERRUPTIN=1"/>
+									<listOptionValue builtIn="false" value="TARGET_CORTEX"/>
+									<listOptionValue builtIn="false" value="DEVICE_I2C=1"/>
+									<listOptionValue builtIn="false" value="TRANSACTION_QUEUE_SIZE_SPI=2"/>
+									<listOptionValue builtIn="false" value="__CORTEX_M4"/>
+									<listOptionValue builtIn="false" value="DEVICE_STDIO_MESSAGES=1"/>
+									<listOptionValue builtIn="false" value="TARGET_FF_MORPHO"/>
+									<listOptionValue builtIn="false" value="TARGET_FAMILY_STM32"/>
+									<listOptionValue builtIn="false" value="TARGET_FF_ARDUINO"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32F446RE"/>
+									<listOptionValue builtIn="false" value="TARGET_RELEASE"/>
+									<listOptionValue builtIn="false" value="TARGET_STM"/>
+									<listOptionValue builtIn="false" value="USBHOST_OTHER"/>
+									<listOptionValue builtIn="false" value="__MBED_CMSIS_RTOS_CM"/>
+									<listOptionValue builtIn="false" value="DEVICE_SLEEP=1"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC_ARM"/>
+									<listOptionValue builtIn="false" value="DEVICE_SPI=1"/>
+									<listOptionValue builtIn="false" value="USB_STM_HAL"/>
+									<listOptionValue builtIn="false" value="TARGET_NUCLEO_F446RE"/>
+									<listOptionValue builtIn="false" value="DEVICE_SPISLAVE=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_ANALOGIN=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_SERIAL=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_FLASH=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_PORTIN=1"/>
+									<listOptionValue builtIn="false" value="ARM_MATH_CM4"/>
+									<listOptionValue builtIn="false" value="DEVICE_SERIAL_FC=1"/>
+									<listOptionValue builtIn="false" value="MBED_DEBUG"/>
+									<listOptionValue builtIn="false" value="MBED_TRAP_ERRORS_ENABLED=1"/>
+									<listOptionValue builtIn="false" value="MBED_DEBUG"/>
+									<listOptionValue builtIn="false" value="MBED_TRAP_ERRORS_ENABLED=1"/>
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+								</option>
+								<option id="gnu.c.compiler.option.include.files.580741050" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false" valueType="includeFiles">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/mbed_config.h"/>
+								</option>
+								<option id="gnu.c.compiler.option.dialect.std.493915762" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.gnu99" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.dialect.std.896319444" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.c99" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.warnings.extrawarn.692808244" name="Extra warnings (-Wextra)" superClass="gnu.c.compiler.option.warnings.extrawarn" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata.968186672" name="Place the data in their own section (-fdata-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction.397052037" name="Place the function in their own section (-ffunction-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="gnu.c.compiler.option.optimization.flags.253508099" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags" useByScannerDiscovery="false" value=" -funsigned-char -fno-delete-null-pointer-checks -fomit-frame-pointer -fmessage-length=0 -fno-builtin" valueType="string"/>
+								<option id="fr.ac6.managedbuid.gnu.c.compiler.option.misc.other.717394035" name="Other flags" superClass="fr.ac6.managedbuid.gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="  -Wno-unused-parameter -Wno-missing-field-initializers" valueType="string"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.134836550" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.857735571" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.750731733" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+								<option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.285440001" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.cpp.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.341433163" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.include.paths.713822363" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;../.&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../BNO055_fusion&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Ballsensor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Linesensor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Motor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Ping&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/TARGET_NUCLEO_F446RE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/drivers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/hal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/platform&quot;"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.106302505" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__MBED__=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_I2CSLAVE=1"/>
+									<listOptionValue builtIn="false" value="TARGET_LIKE_MBED"/>
+									<listOptionValue builtIn="false" value="DEVICE_PORTOUT=1"/>
+									<listOptionValue builtIn="false" value="MBED_BUILD_TIMESTAMP=1542112513.75"/>
+									<listOptionValue builtIn="false" value="DEVICE_PORTINOUT=1"/>
+									<listOptionValue builtIn="false" value="TARGET_RTOS_M4_M7"/>
+									<listOptionValue builtIn="false" value="DEVICE_LOWPOWERTIMER=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_RTC=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_SERIAL_ASYNCH=1"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32F4"/>
+									<listOptionValue builtIn="false" value="__CMSIS_RTOS"/>
+									<listOptionValue builtIn="false" value="__FPU_PRESENT=1"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32F446xE"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC"/>
+									<listOptionValue builtIn="false" value="DEVICE_CAN=1"/>
+									<listOptionValue builtIn="false" value="TARGET_CORTEX_M"/>
+									<listOptionValue builtIn="false" value="DEVICE_I2C_ASYNCH=1"/>
+									<listOptionValue builtIn="false" value="TARGET_LIKE_CORTEX_M4"/>
+									<listOptionValue builtIn="false" value="DEVICE_ANALOGOUT=1"/>
+									<listOptionValue builtIn="false" value="TARGET_M4"/>
+									<listOptionValue builtIn="false" value="DEVICE_SPI_ASYNCH=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_PWMOUT=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_INTERRUPTIN=1"/>
+									<listOptionValue builtIn="false" value="TARGET_CORTEX"/>
+									<listOptionValue builtIn="false" value="DEVICE_I2C=1"/>
+									<listOptionValue builtIn="false" value="TRANSACTION_QUEUE_SIZE_SPI=2"/>
+									<listOptionValue builtIn="false" value="__CORTEX_M4"/>
+									<listOptionValue builtIn="false" value="DEVICE_STDIO_MESSAGES=1"/>
+									<listOptionValue builtIn="false" value="TARGET_FF_MORPHO"/>
+									<listOptionValue builtIn="false" value="TARGET_FAMILY_STM32"/>
+									<listOptionValue builtIn="false" value="TARGET_FF_ARDUINO"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32F446RE"/>
+									<listOptionValue builtIn="false" value="TARGET_RELEASE"/>
+									<listOptionValue builtIn="false" value="TARGET_STM"/>
+									<listOptionValue builtIn="false" value="USBHOST_OTHER"/>
+									<listOptionValue builtIn="false" value="__MBED_CMSIS_RTOS_CM"/>
+									<listOptionValue builtIn="false" value="DEVICE_SLEEP=1"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC_ARM"/>
+									<listOptionValue builtIn="false" value="DEVICE_SPI=1"/>
+									<listOptionValue builtIn="false" value="USB_STM_HAL"/>
+									<listOptionValue builtIn="false" value="TARGET_NUCLEO_F446RE"/>
+									<listOptionValue builtIn="false" value="DEVICE_SPISLAVE=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_ANALOGIN=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_SERIAL=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_FLASH=1"/>
+									<listOptionValue builtIn="false" value="DEVICE_PORTIN=1"/>
+									<listOptionValue builtIn="false" value="ARM_MATH_CM4"/>
+									<listOptionValue builtIn="false" value="DEVICE_SERIAL_FC=1"/>
+									<listOptionValue builtIn="false" value="MBED_DEBUG"/>
+									<listOptionValue builtIn="false" value="MBED_TRAP_ERRORS_ENABLED=1"/>
+									<listOptionValue builtIn="false" value="MBED_DEBUG"/>
+									<listOptionValue builtIn="false" value="MBED_TRAP_ERRORS_ENABLED=1"/>
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.include.files.780566130" name="Include files (-include)" superClass="gnu.cpp.compiler.option.include.files" useByScannerDiscovery="false" valueType="includeFiles">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/mbed_config.h"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.dialect.std.874066734" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.gnu99" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.warnings.allwarn.193527278" name="All warnings (-Wall)" superClass="gnu.cpp.compiler.option.warnings.allwarn" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.warnings.extrawarn.071101340" name="Extra warnings (-Wextra)" superClass="gnu.cpp.compiler.option.warnings.extrawarn" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.fdata.577364673" name="Place the data in their own section (-fdata-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.fdata" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction.756176258" name="Place the function in their own section (-ffunction-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.optimization.flags.108544318" name="Other optimization flags" superClass="gnu.cpp.compiler.option.optimization.flags" useByScannerDiscovery="false" value=" -funsigned-char -fno-delete-null-pointer-checks -fomit-frame-pointer -fmessage-length=0 -fno-builtin" valueType="string"/>
+								<option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.misc.other.927434225" name="Other flags" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.misc.other" useByScannerDiscovery="false" value=" -Wvla -Wno-unused-parameter -Wno-missing-field-initializers" valueType="string"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.932063638" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s.964092493" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.601309695" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker">
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.script.804138556" name="Linker Script (-T)" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.script" value="${ProjDirPath}/Release/linker-script-release.ld" valueType="string"/>
+								<option id="gnu.cpp.link.option.flags.516341470" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-Wl,--wrap=main -Wl,--wrap=_malloc_r -Wl,--wrap=_free_r -Wl,--wrap=_realloc_r -Wl,--wrap=_memalign_r -Wl,--wrap=_calloc_r -Wl,--wrap=exit -Wl,--wrap=atexit -DNDEBUG -Wl,-n -Wl,--start-group -lstdc++ -lsupc++ -lm -lc -lgcc -lnosys -Wl,--end-group" valueType="string"/>
+								<option id="gnu.cpp.link.option.userobjs.000169622" name="Other objects" superClass="gnu.cpp.link.option.userobjs" valueType="userObjs">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/PeripheralPins.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/analogin_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/analogout_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/analogout_device.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/can_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/flash_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/gpio_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/gpio_irq_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/gpio_irq_device.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/hal_init_pre.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/hal_tick_16b.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/hal_tick_32b.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/i2c_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/lp_ticker.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/mbed_board.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/mbed_overrides.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/mbed_retarget.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/mbed_sdk_boot.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/pinmap.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/port_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/pwmout_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/pwmout_device.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/rtc_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/serial_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/serial_device.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/sleep.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/spi_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/startup_stm32f446xx.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_can.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cec.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cortex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_crc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dfsdm.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma2d.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dsi.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_eth.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ramfunc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_fmpi2c.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_fmpi2c_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_gpio.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hash.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hash_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hcd.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_irda.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_iwdg.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_lptim.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_ltdc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_ltdc_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_mmc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_msp_template.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_nand.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_nor.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pccard.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_qspi.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rng.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sai.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sai_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sd.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sdram.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_smartcard.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spdifrx.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spi.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sram.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim_ex.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_uart.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_usart.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_wwdg.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_adc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_crc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dac.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dma.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dma2d.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_exti.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fmc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fsmc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_gpio.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_i2c.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_lptim.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_pwr.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rcc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rng.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rtc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_sdmmc.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_spi.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_tim.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usart.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usb.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_utils.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/stm_spi_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/system_clock.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/system_stm32f4xx.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/trng_api.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/us_ticker_16b.o}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/us_ticker_32b.o}&quot;"/>
+								</option>
+								<option id="gnu.cpp.link.option.libs.074364964" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="mbed"/>
+								</option>
+								<option id="gnu.cpp.link.option.paths.310476981" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.860973838" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.671850717" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.693253840" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler">
+								<option id="gnu.both.asm.option.include.paths.858863644" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;../.&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../BNO055_fusion&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Ballsensor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Linesensor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Motor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../Ping&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/TARGET_NUCLEO_F446RE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/drivers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/hal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../mbed/platform&quot;"/>
+								</option>
+								<option id="gnu.both.asm.option.flags.215775971" name="Assembler flags" superClass="gnu.both.asm.option.flags" useByScannerDiscovery="false" value=" --defsym TRANSACTION_QUEUE_SIZE_SPI=2 --defsym __CORTEX_M4=1 --defsym USB_STM_HAL=1 --defsym ARM_MATH_CM4=1 --defsym __FPU_PRESENT=1 --defsym USBHOST_OTHER=1 --defsym __MBED_CMSIS_RTOS_CM=1 --defsym __CMSIS_RTOS=1 --defsym MBED_DEBUG=1 --defsym MBED_TRAP_ERRORS_ENABLED=1 --defsym NDEBUG=1 " valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.799016417" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.694510530" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.2080775529" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.exe.release.2067219697" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.exe.release">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1134316144" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.1117956380" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_L152RE|/filer/web_data/repo_builds/4/318/TARGET_ARCH_GPRS|/filer/web_data/repo_builds/4/318/TARGET_SAMD21J18A|Ping/.meta|/filer/web_data/repo_builds/4/318/TARGET_NRF51_MICROBIT_B|/filer/web_data/repo_builds/4/318/TARGET_KW24D|/filer/web_data/repo_builds/4/318/TARGET_ELMO_F411RE|/filer/web_data/repo_builds/4/318/TARGET_LPC1768|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_L073RZ|/filer/web_data/repo_builds/4/318/TARGET_DISCO_F769NI|/filer/web_data/repo_builds/4/318/TARGET_UBLOX_EVK_NINA_B1|/filer/workspace_data/workspaces/5/54aa59198d6ce932e2ce403b4bd8a6a4/Robot_sample/src/BNO055_fusion/.hg|/filer/web_data/repo_builds/4/318/TARGET_LPC812|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F070RB|/filer/web_data/repo_builds/4/318/TARGET_LPC11U37H_401|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F429ZI|/filer/web_data/repo_builds/4/318/TARGET_KW41Z|/filer/web_data/repo_builds/4/318/TARGET_MTS_MDOT_F405RG|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F302R8|/filer/web_data/repo_builds/4/318/TARGET_DISCO_F429ZI|/filer/web_data/repo_builds/4/318/TARGET_NRF52840_DK|/filer/web_data/repo_builds/4/318/TARGET_K22F|/filer/web_data/repo_builds/4/318/TARGET_DISCO_F334C8|/filer/web_data/repo_builds/4/318/TARGET_DISCO_F413ZH|/filer/web_data/repo_builds/4/318/TARGET_DELTA_DFBM_NQ620|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F072RB|Ballsensor/.meta|/filer/web_data/repo_builds/4/318/TARGET_SEEED_TINY_BLE|/filer/web_data/repo_builds/4/318/TARGET_MOTE_L152RC|Ballsensor/.msub|/filer/web_data/repo_builds/4/318/TARGET_UBLOX_EVA_NINA|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F042K6|/filer/web_data/repo_builds/4/318/TARGET_MAX32630FTHR|/filer/workspace_data/workspaces/5/54aa59198d6ce932e2ce403b4bd8a6a4/Robot_sample/src/Ballsensor/.hg|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F439ZI|/filer/web_data/repo_builds/4/318/TARGET_MAX32625NEXPAQ|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F103RB|/filer/web_data/repo_builds/4/318/TARGET_K82F|/filer/web_data/repo_builds/4/318/TARGET_DISCO_F746NG|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F091RC|/filer/web_data/repo_builds/4/318/TARGET_ARCH_BLE|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F746ZG|/filer/web_data/repo_builds/4/318/TARGET_LPC1347|/filer/web_data/repo_builds/4/318/TARGET_NCS36510|.msub|BNO055_fusion/.meta|/filer/web_data/repo_builds/4/318/TARGET_NRF51_MICROBIT|/filer/web_data/repo_builds/4/318/TARGET_MTM_MTCONNECT04S|/filer/web_data/repo_builds/4/318/TARGET_LPC546XX|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F401RE|/filer/web_data/repo_builds/4/318/TARGET_LPC1114|/filer/web_data/repo_builds/4/318/TARGET_KL46Z|/filer/workspace_data/workspaces/5/54aa59198d6ce932e2ce403b4bd8a6a4/Robot_sample/src/Linesensor/.hg|/filer/web_data/repo_builds/4/318/TARGET_ARM_MPS2_M0P|Linesensor/.meta|/filer/web_data/repo_builds/4/318/TARGET_TY51822R3|/filer/web_data/repo_builds/4/318/TARGET_KL25Z|/filer/web_data/repo_builds/4/318/TARGET_OC_MBUINO|/filer/web_data/repo_builds/4/318/TARGET_VK_RZ_A1H|/filer/web_data/repo_builds/4/318/TARGET_K64F|/filer/web_data/repo_builds/4/318/TARGET_ARCH_MAX|/filer/web_data/repo_builds/4/318/TARGET_LPC11U24|/filer/web_data/repo_builds/4/318/TARGET_RO359B|/filer/web_data/repo_builds/4/318/TARGET_LPC11U35_501|/filer/web_data/repo_builds/4/318/TARGET_EFM32PG_STK3401|/filer/web_data/repo_builds/4/318/TARGET_LPC4337|/filer/web_data/repo_builds/4/318/TARGET_HEXIWEAR|/filer/web_data/repo_builds/4/318/TARGET_DISCO_L072CZ_LRWAN1|/filer/web_data/repo_builds/4/318/TARGET_MAX32625MBED|/filer/workspace_data/workspaces/5/54aa59198d6ce932e2ce403b4bd8a6a4/Robot_sample/src/.hg|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F411RE|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F410RB|/filer/web_data/repo_builds/4/318/TARGET_MTS_MDOT_F411RE|.meta|/filer/web_data/repo_builds/4/318/TARGET_EFM32HG_STK3400|/filer/web_data/repo_builds/4/318/TARGET_TB_SENSE_1|/filer/web_data/repo_builds/4/318/TARGET_KL82Z|/filer/web_data/repo_builds/4/318/TARGET_ARM_CM3DS_MPS2|/filer/web_data/repo_builds/4/318/TARGET_WIZwiki_W7500|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F446RE/TOOLCHAIN_IAR|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_L432KC|/filer/web_data/repo_builds/4/318/TARGET_B96B_F446VE|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F303ZE|/filer/web_data/repo_builds/4/318/TARGET_HRM1017|/filer/web_data/repo_builds/4/318/TARGET_MAX32620HSP|/filer/web_data/repo_builds/4/318/TARGET_EFM32WG_STK3800|/filer/web_data/repo_builds/4/318/TARGET_MTS_DRAGONFLY_F411RE|/filer/web_data/repo_builds/4/318/TARGET_DISCO_L053C8|/filer/web_data/repo_builds/4/318/TARGET_LPC4088|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F030R8|/filer/web_data/repo_builds/4/318/TARGET_VBLUNO51|/filer/web_data/repo_builds/4/318/TARGET_VBLUNO52|/filer/web_data/repo_builds/4/318/TARGET_EFM32LG_STK3600|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F756ZG|/filer/web_data/repo_builds/4/318/TARGET_WALLBOT_BLE|/filer/web_data/repo_builds/4/318/TARGET_NRF51_DK|/filer/web_data/repo_builds/4/318/TARGET_NUMAKER_PFM_M453|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F412ZG|/filer/web_data/repo_builds/4/318/TARGET_ARM_MPS2_M7|/filer/web_data/repo_builds/4/318/TARGET_ARM_MPS2_M4|/filer/web_data/repo_builds/4/318/TARGET_ARM_MPS2_M3|/filer/web_data/repo_builds/4/318/TARGET_ARM_MPS2_M0|/filer/web_data/repo_builds/4/318/TARGET_KL27Z|/filer/web_data/repo_builds/4/318/TARGET_MAXWSNENV|/filer/web_data/repo_builds/4/318/TARGET_MAX32600MBED|/filer/web_data/repo_builds/4/318/TARGET_LPC4088_DM|/filer/web_data/repo_builds/4/318/TARGET_LPC11U35_401|/filer/web_data/repo_builds/4/318/TARGET_RZ_A1H|/filer/web_data/repo_builds/4/318/TARGET_K66F|/filer/web_data/repo_builds/4/318/TARGET_KL43Z|/filer/web_data/repo_builds/4/318/TARGET_ARM_BEETLE_SOC|/filer/web_data/repo_builds/4/318/TARGET_SAMR21G18A|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F446ZE|/filer/web_data/repo_builds/4/318/TARGET_NRF51_DONGLE_LEGACY|/filer/web_data/repo_builds/4/318/TARGET_TEENSY3_1|/filer/web_data/repo_builds/4/318/TARGET_K20D50M|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F207ZG|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F031K6|/filer/web_data/repo_builds/4/318/TARGET_DELTA_DFCM_NNN40|/filer/web_data/repo_builds/4/318/TARGET_WIZWIKI_W7500P|/filer/web_data/repo_builds/4/318/TARGET_ARM_IOTSS_BEID|/filer/web_data/repo_builds/4/318/TARGET_NRF51822|/filer/web_data/repo_builds/4/318/TARGET_LPC824|.hg_archival.txt|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F303K8|/filer/web_data/repo_builds/4/318/TARGET_DISCO_L475VG_IOT01A|/filer/web_data/repo_builds/4/318/TARGET_DISCO_L476VG|/filer/web_data/repo_builds/4/318/TARGET_NRF52_DK|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_L031K6|/filer/web_data/repo_builds/4/318/TARGET_DISCO_F469NI|/filer/web_data/repo_builds/4/318/TARGET_LPC54114|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F334R8|/filer/web_data/repo_builds/4/318/TARGET_SSCI824|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F767ZI|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_L053R8|/filer/web_data/repo_builds/4/318/TARGET_ARCH_PRO|/filer/web_data/repo_builds/4/318/TARGET_SAMD21G18A|/filer/workspace_data/workspaces/5/54aa59198d6ce932e2ce403b4bd8a6a4/Robot_sample/src/Motor/.hg|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F446RE/TOOLCHAIN_ARM_MICRO|/filer/web_data/repo_builds/4/318/TARGET_LPC1549|Motor/.meta|/filer/web_data/repo_builds/4/318/TARGET_RBLAB_NRF51822|/filer/web_data/repo_builds/4/318/TARGET_KL05Z|/filer/web_data/repo_builds/4/318/TARGET_RBLAB_BLENANO|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_L486RG|/filer/workspace_data/workspaces/5/54aa59198d6ce932e2ce403b4bd8a6a4/Robot_sample/src/Ping/.hg|/filer/web_data/repo_builds/4/318/TARGET_EFM32GG_STK3700|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_L476RG|/filer/web_data/repo_builds/4/318/TARGET_WIZWIKI_W7500ECO|/filer/web_data/repo_builds/4/318/TARGET_TB_SENSE_12|/filer/web_data/repo_builds/4/318/TARGET_LPC11U68|/filer/web_data/repo_builds/4/318/TARGET_XADOW_M0|/filer/web_data/repo_builds/4/318/TARGET_UBRIDGE|/filer/web_data/repo_builds/4/318/TARGET_NRF51_DONGLE|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F303RE|/filer/web_data/repo_builds/4/318/TARGET_NUCLEO_F446RE/TOOLCHAIN_ARM_STD|/filer/web_data/repo_builds/4/318/TARGET_UBLOX_C027|/filer/web_data/repo_builds/4/318/TARGET_USENSE|/filer/web_data/repo_builds/4/318/TARGET_MICRONFCBOARD|/filer/web_data/repo_builds/4/318/TARGET_EFM32ZG_STK3200|/filer/web_data/repo_builds/4/318/TARGET_EFM32PG12_STK3402" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="Robot_sample.fr.ac6.managedbuild.target.gnu.cross.exe.123677605" name="Executable" projectType="fr.ac6.managedbuild.target.gnu.cross.exe"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.debug.127106594;fr.ac6.managedbuild.config.gnu.cross.exe.debug.127106594.;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.132016534;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.417720624">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.debug.127106594;fr.ac6.managedbuild.config.gnu.cross.exe.debug.127106594.;fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.593371410;fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.723800421">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.release.458118663;fr.ac6.managedbuild.config.gnu.cross.exe.release.458118663.;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.404671431;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.134836550">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.release.458118663;fr.ac6.managedbuild.config.gnu.cross.exe.release.458118663.;fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.750731733;fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.932063638">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+</cproject>
